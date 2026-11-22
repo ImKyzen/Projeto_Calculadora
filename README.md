@@ -1,5 +1,8 @@
 # Atividade Calculadora – TESTES FUNCIONAIS, REFATORAÇÃO E DOCUMENTAÇÃO DE SOFTWARE
 
+**Nome:** Enzo Akio Koga
+**RA:** 251154
+
 ## 1. Descrição da Atividade
 
 Esta atividade tem como objetivo aplicar conceitos de qualidade de software durante o desenvolvimento de uma aplicação simples em Java, utilizando uma calculadora como exemplo prático.
@@ -115,7 +118,8 @@ Foram realizados seis testes funcionais para verificar o comportamento da calcul
 
 Abaixo devem ser inseridas capturas de tela da execução dos testes no ambiente de desenvolvimento, demonstrando os resultados apresentados no console.
 
-![Resultados Testes Funcionais](Resultado teste funcional.png)
+<img width="353" height="537" alt="Resultado teste funcional" src="https://github.com/user-attachments/assets/5efc4657-c724-4eef-969f-2b5f04d554ad" />
+
 
 ## 6. Refatoração
 
@@ -135,10 +139,10 @@ Para visualizar a documentação, basta abrir o arquivo `index.html` presente ne
 
 ### Evidências da documentação
 
-![Package calculadora](Package Calculadora.png)
-![Class Calculadora](Class calculadora.png)
-![Class main_calculadora](Class main_calculadora.png)
-![Class testecalculadora](Class testecalculadora.png)
+<img width="1876" height="943" alt="Package Calculadora" src="https://github.com/user-attachments/assets/d26391cb-dd6d-4ac8-b00b-3c22d91f4f70" />
+<img width="1871" height="937" alt="Class calculadora" src="https://github.com/user-attachments/assets/56fcfc30-854e-4da8-867c-842be0998497" />
+<img width="1871" height="935" alt="Class testecalculadora" src="https://github.com/user-attachments/assets/cdf04db0-023d-42d4-8d16-54d4644fd37c" />
+<img width="1869" height="940" alt="Class main_calculadora" src="https://github.com/user-attachments/assets/79f0b73c-c19d-448d-b16e-dfbe9705f198" />
 
 ## 8. Versionamento
 
