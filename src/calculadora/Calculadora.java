@@ -31,25 +31,25 @@ public class Calculadora {
     public double calc(double a, double b, String op) {
         double result = 0;
         switch (op) {
-            case ("+"):
+            case ("+"): //Caso de soma
                 result = a + b;
                 break;
-            case ("-"):
+            case ("-"): //Caso de subtração
                 result = a - b;
                 break;
-            case ("*"):
+            case ("*"): //Caso de multiplicação
                 result = a * b;
                 break;
-            case ("/"):
-                if (b == 0) {
-                    System.out.println("impossível divisão por zero");
-                    return Double.NaN;
+            case ("/"): //Caso de divisão
+                if (b == 0) { //Verifica se o segundo número é zero
+                    System.out.println("impossível divisão por zero"); //Se for zero, retorna a mensagem
+                    return Double.NaN;//Retorna um NaN (Not a Number)
                 } else {
                     result = a / b;
                 }
                 break;
             default:
-                System.out.println("Operação inválida");
+                System.out.println("Operação inválida"); //Caso de nenhum caso acima
                 break;
         }
         return result;
