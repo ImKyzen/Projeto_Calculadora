@@ -10,7 +10,7 @@ import java.util.Scanner;
  * para realizar as operações matemáticas.
  * 
  * @author Enzo Koga
- * @version 1.0
+ * @version 2.0
  */
 public class Main_Calculadora {
     
@@ -24,10 +24,10 @@ public class Main_Calculadora {
      */
 
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int option = 0;
         double a, b, resultado;
-        String opt = "";
+        String operador = "";
         Calculadora calculadora = new Calculadora();
 
         do {
@@ -36,27 +36,27 @@ public class Main_Calculadora {
                         + "\nSelecione uma opção"
                         + "\n\nCalcular - [1]"
                         + "\nSair     - [2]");
-                option = scn.nextInt();
+                option = scanner.nextInt();
             } catch (InputMismatchException e) {
                 System.out.println("Digite apenas números");
-                scn.nextLine();
+                scanner.nextLine();
             }
             switch (option) {
                 case 1:
                     try {
-                        System.out.println("Digite o primeiro número");
-                        a = scn.nextDouble();
-                        System.out.println("Digite o segundo número");
-                        b = scn.nextDouble();
-                        System.out.println("Digite uma operação");
-                        opt = scn.next();
-                        resultado = calculadora.calc(a, b, opt);
+                        System.out.println("\nDigite o primeiro número");
+                        a = scanner.nextDouble();
+                        System.out.println("\nDigite o segundo número");
+                        b = scanner.nextDouble();
+                        System.out.println("\nDigite uma operação");
+                        operador = scanner.next();
+                        resultado = calculadora.calc(a, b, operador);
                         if (!Double.isNaN(resultado)) {
-                            System.out.println("Resultado: " + resultado);
+                            System.out.println("\nResultado: " + resultado);
                         }
                     } catch (InputMismatchException e) {
                         System.out.println("Digite apenas números");
-                        scn.nextLine();
+                        scanner.nextLine();
                     }
                     break;
                 case 2:
@@ -64,7 +64,7 @@ public class Main_Calculadora {
                     option = 2;
                     break;
                 default:
-                    System.out.println("Opcao invalida");
+                    System.out.println("Opção inválida");
             }
         } while (option != 2);
     }

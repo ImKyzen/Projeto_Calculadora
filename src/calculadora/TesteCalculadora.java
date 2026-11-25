@@ -2,8 +2,7 @@ package calculadora;
 /**
  * Classe responsável por executar testes funcionais da calculadora
  * utilizando entradas predefinidas.
- *
- * Verifica o funcionamento das operações de soma, subtração,
+ * 
  * multiplicação e divisão, além de testar situações de erro,
  * como divisão por zero e operações inválidas.
  *
@@ -11,7 +10,7 @@ package calculadora;
  * permitindo comparar o comportamento obtido com o esperado.
  * 
  * @author Enzo Koga
- * @version 1.0
+ * @version 2.0
  * 
  * Teste da calculadora com entradas pre-definidas
  */
@@ -35,32 +34,32 @@ public class TesteCalculadora {
         //Teste de soma
         System.out.println("\nTeste de soma");
         System.out.println("10 + 5");
-        System.out.println("Resultado = " + calculadora.calc(10,5, "+"));
+        System.out.println("\nResultado = " + calculadora.calc(10,5, "+"));
         
         //Teste de subtração
         System.out.println("\nTeste de subtração");
         System.out.println("10 - 5");
-        System.out.println("Resultado = " + calculadora.calc(10,5, "-"));
+        System.out.println("\nResultado = " + calculadora.calc(10,5, "-"));
         
         //Teste de multiplicação
         System.out.println("\nTeste de multiplicação");
         System.out.println("10 * 5");
-        System.out.println("Resultado = " + calculadora.calc(10,5, "*"));
+        System.out.println("\nResultado = " + calculadora.calc(10,5, "*"));
         
         //Teste de divisão
         System.out.println("\nTeste de divisão");
         System.out.println("10 / 5");
-        System.out.println("Resultado = " + calculadora.calc(10,5, "/"));
+        System.out.println("\nResultado = " + calculadora.calc(10,5, "/"));
         
         //Teste de erro: Divisão por zero
         System.out.println("\nTeste de divisão por zero");
         System.out.println("10 / 0");
-        System.out.println("Resultado = " + calculadora.calc(10,0, "/"));
+        System.out.println("\nResultado = " + calculadora.calc(10,0, "/"));
         
         //Teste de erro: Operação inválida
         System.out.println("\nTeste de operação inválida");
         System.out.println("10 % 5");
-        System.out.println("Resultado = " + calculadora.calc(10,5, "%"));
+        System.out.println("\nResultado = " + calculadora.calc(10,5, "%"));
         
     }    
 }

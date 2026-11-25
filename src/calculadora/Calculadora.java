@@ -5,7 +5,7 @@ package calculadora;
  * incluindo soma, subtração, multiplicação e divisão.
  * 
  * @author Enzo Koga
- * @version 1.0
+ * @version 2.0
  */
 public class Calculadora {
     /**
@@ -29,29 +29,39 @@ public class Calculadora {
      * de divisão por zero
      */
     public double calc(double a, double b, String op) {
-        double result = 0;
         switch (op) {
             case ("+"): //Caso de soma
-                result = a + b;
-                break;
+                return a + b;
+
             case ("-"): //Caso de subtração
-                result = a - b;
-                break;
+                return a - b;
+
             case ("*"): //Caso de multiplicação
-                result = a * b;
-                break;
+                return a * b;
+
             case ("/"): //Caso de divisão
-                if (b == 0) { //Verifica se o segundo número é zero
-                    System.out.println("impossível divisão por zero"); //Se for zero, retorna a mensagem
-                    return Double.NaN;//Retorna um NaN (Not a Number)
-                } else {
-                    result = a / b;
-                }
-                break;
+                return dividir(a, b);            
+
             default:
                 System.out.println("Operação inválida"); //Caso de nenhum caso acima
-                break;
+                return 0;
         }
-        return result;
+    }
+
+    /**
+     * Realiza a divisão entre dois números.
+     * 
+     * @param a dividendo
+     * @param b divisor
+     * @return resultado da divisão ou Double.NaN se o divisor for zero
+     */
+
+    private double dividir(double a, double b) {
+        if (b == 0) {
+            System.out.println("impossível dividir por zero");
+            return Double.NaN;
+        }
+
+        return a / b;
     }
 }
