@@ -1,32 +1,32 @@
 package calculadora;
 
 /**
- * Classe respons·vel por realizar operaÁıes matem·ticas b·sicas
- * incluindo soma, subtraÁ„o, multiplicaÁ„o e divis„o.
+ * Classe respons√°vel por realizar opera√ß√µes matem√°ticas b√°sicas
+ * incluindo soma, subtra√ß√£o, multiplica√ß√£o e divis√£o.
  * 
  * @author Enzo Koga
  * @version 1.0
  */
 public class Calculadora {
     /**
-     * Executa uma operaÁ„o matem·tica com base no operador informado.
+     * Executa uma opera√ß√£o matem√°tica com base no operador informado.
      * 
-     * As operaÁıes disponÌveis s„o:
+     * As opera√ß√µes dispon√≠veis s√£o:
      * Soma: +
-     * SubtraÁ„o: -
-     * MultiplicaÁ„o: *
-     * Divis„o: /
+     * Subtra√ß√£o: -
+     * Multiplica√ß√£o: *
+     * Divis√£o: /
      * 
-     * Caso seja informada uma divis„o por zero, o mÈtodo apresenta
+     * Caso seja informada uma divis√£o por zero, o m√©todo apresenta
      * uma mensagem de erro e retorna Double.NaN.
-     * Para operadores inv·lidos, apresenta uma mensagem de erro
+     * Para operadores inv√°lidos, apresenta uma mensagem de erro
      * e retorna o valor inicial de resultado (0).
      *  
-     * @param a primeiro n˙mero utilizado na operaÁ„o matem·tica
-     * @param b segundo n˙mero utilizado na operaÁ„o matem·tica
-     * @param op operador matem·tico que determina a operaÁ„o desejada
-     * @return resultado da operaÁ„o matem·tica ou Double.NaN em caso
-     * de divis„o por zero
+     * @param a primeiro n√∫mero utilizado na opera√ß√£o matem√°tica
+     * @param b segundo n√∫mero utilizado na opera√ß√£o matem√°tica
+     * @param op operador matem√°tico que determina a opera√ß√£o desejada
+     * @return resultado da opera√ß√£o matem√°tica ou Double.NaN em caso
+     * de divis√£o por zero
      */
     public double calc(double a, double b, String op) {
         double result = 0;
@@ -34,22 +34,22 @@ public class Calculadora {
             case ("+"): //Caso de soma
                 result = a + b;
                 break;
-            case ("-"): //Caso de subtraÁ„o
+            case ("-"): //Caso de subtra√ß√£o
                 result = a - b;
                 break;
-            case ("*"): //Caso de multiplicaÁ„o
+            case ("*"): //Caso de multiplica√ß√£o
                 result = a * b;
                 break;
-            case ("/"): //Caso de divis„o
-                if (b == 0) { //Verifica se o segundo n˙mero È zero
-                    System.out.println("impossÌvel divis„o por zero"); //Se for zero, retorna a mensagem
+            case ("/"): //Caso de divis√£o
+                if (b == 0) { //Verifica se o segundo n√∫mero √© zero
+                    System.out.println("imposs√≠vel divis√£o por zero"); //Se for zero, retorna a mensagem
                     return Double.NaN;//Retorna um NaN (Not a Number)
                 } else {
                     result = a / b;
                 }
                 break;
             default:
-                System.out.println("OperaÁ„o inv·lida"); //Caso de nenhum caso acima
+                System.out.println("Opera√ß√£o inv√°lida"); //Caso de nenhum caso acima
                 break;
         }
         return result;

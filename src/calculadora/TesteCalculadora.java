@@ -1,13 +1,13 @@
 package calculadora;
 /**
- * Classe respons·vel por executar testes funcionais da calculadora
+ * Classe respons√°vel por executar testes funcionais da calculadora
  * utilizando entradas predefinidas.
  *
- * Verifica o funcionamento das operaÁıes de soma, subtraÁ„o,
- * multiplicaÁ„o e divis„o, alÈm de testar situaÁıes de erro,
- * como divis„o por zero e operaÁıes inv·lidas.
+ * Verifica o funcionamento das opera√ß√µes de soma, subtra√ß√£o,
+ * multiplica√ß√£o e divis√£o, al√©m de testar situa√ß√µes de erro,
+ * como divis√£o por zero e opera√ß√µes inv√°lidas.
  *
- * Os resultados dos testes s„o apresentados no console,
+ * Os resultados dos testes s√£o apresentados no console,
  * permitindo comparar o comportamento obtido com o esperado.
  * 
  * @author Enzo Koga
@@ -18,11 +18,11 @@ package calculadora;
 public class TesteCalculadora {
     
     /**
-     * MÈtodo principal respons·vel por executar os testes
-     * das operaÁıes matem·ticas e das situaÁıes de erro.
+     * M√©todo principal respons√°vel por executar os testes
+     * das opera√ß√µes matem√°ticas e das situa√ß√µes de erro.
      *
      * Utiliza valores predefinidos como entrada e apresenta
-     * no console as operaÁıes realizadas e seus resultados.
+     * no console as opera√ß√µes realizadas e seus resultados.
      *
      * @param args argumentos recebidos pela linha de comando
      */
@@ -37,28 +37,28 @@ public class TesteCalculadora {
         System.out.println("10 + 5");
         System.out.println("Resultado = " + calculadora.calc(10,5, "+"));
         
-        //Teste de subtraÁ„o
-        System.out.println("\nTeste de subtraÁ„o");
+        //Teste de subtra√ß√£o
+        System.out.println("\nTeste de subtra√ß√£o");
         System.out.println("10 - 5");
         System.out.println("Resultado = " + calculadora.calc(10,5, "-"));
         
-        //Teste de multiplicaÁ„o
-        System.out.println("\nTeste de multiplicaÁ„o");
+        //Teste de multiplica√ß√£o
+        System.out.println("\nTeste de multiplica√ß√£o");
         System.out.println("10 * 5");
         System.out.println("Resultado = " + calculadora.calc(10,5, "*"));
         
-        //Teste de divis„o
-        System.out.println("\nTeste de divis„o");
+        //Teste de divis√£o
+        System.out.println("\nTeste de divis√£o");
         System.out.println("10 / 5");
         System.out.println("Resultado = " + calculadora.calc(10,5, "/"));
         
-        //Teste de erro: Divis„o por zero
-        System.out.println("\nTeste de divis„o por zero");
+        //Teste de erro: Divis√£o por zero
+        System.out.println("\nTeste de divis√£o por zero");
         System.out.println("10 / 0");
         System.out.println("Resultado = " + calculadora.calc(10,0, "/"));
         
-        //Teste de erro: OperaÁao inv·lida
-        System.out.println("\nTeste de operaÁ„o inv·lida");
+        //Teste de erro: Opera√ß√£o inv√°lida
+        System.out.println("\nTeste de opera√ß√£o inv√°lida");
         System.out.println("10 % 5");
         System.out.println("Resultado = " + calculadora.calc(10,5, "%"));
         

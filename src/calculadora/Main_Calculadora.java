@@ -4,10 +4,10 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * Classe principal respons·vel pela execuÁ„o da aplicaÁ„o.
- * Apresenta um menu interativo ao usu·rio, recebe os valores
+ * Classe principal respons√°vel pela execu√ß√£o da aplica√ß√£o.
+ * Apresenta um menu interativo ao usu√°rio, recebe os valores
  * informados, valida as entradas e utiliza a classe Calculadora
- * para realizar as operaÁıes matem·ticas.
+ * para realizar as opera√ß√µes matem√°ticas.
  * 
  * @author Enzo Koga
  * @version 1.0
@@ -15,9 +15,9 @@ import java.util.Scanner;
 public class Main_Calculadora {
     
     /**
-     * MÈtodo principal respons·vel por iniciar a aplicaÁ„o.
-     * Exibe o menu de opÁıes, permite ao usu·rio realizar c·lculos
-     * ou encerrar o programa e trata entradas inv·lidas por meio
+     * M√©todo principal respons√°vel por iniciar a aplica√ß√£o.
+     * Exibe o menu de op√ß√µes, permite ao usu√°rio realizar c√°lculos
+     * ou encerrar o programa e trata entradas inv√°lidas por meio
      * de InputMismatchException.
      *
      * @param args argumentos recebidos pela linha de comando
@@ -33,29 +33,29 @@ public class Main_Calculadora {
         do {
             try {
                 System.out.println("\n====- Calculadora Simples -===="
-                        + "\nSelecione uma opÁ„o"
+                        + "\nSelecione uma op√ß√£o"
                         + "\n\nCalcular - [1]"
                         + "\nSair     - [2]");
                 option = scn.nextInt();
             } catch (InputMismatchException e) {
-                System.out.println("Digite apenas n˙meros");
+                System.out.println("Digite apenas n√∫meros");
                 scn.nextLine();
             }
             switch (option) {
                 case 1:
                     try {
-                        System.out.println("Digite o primeiro n˙mero");
+                        System.out.println("Digite o primeiro n√∫mero");
                         a = scn.nextDouble();
-                        System.out.println("Digite o segundo n˙mero");
+                        System.out.println("Digite o segundo n√∫mero");
                         b = scn.nextDouble();
-                        System.out.println("Digite uma operaÁ„o");
+                        System.out.println("Digite uma opera√ß√£o");
                         opt = scn.next();
                         resultado = calculadora.calc(a, b, opt);
                         if (!Double.isNaN(resultado)) {
                             System.out.println("Resultado: " + resultado);
                         }
                     } catch (InputMismatchException e) {
-                        System.out.println("Digite apenas n˙meros");
+                        System.out.println("Digite apenas n√∫meros");
                         scn.nextLine();
                     }
                     break;
